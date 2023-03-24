@@ -59,8 +59,8 @@
 							<div class="roomtype_price">
 								<div class="min_price">
 									<h5>Giá phòng</h5>
-									<p>
-										${item.price } <span>/ đêm </span>
+									<p><fmt:formatNumber type = "number" maxFractionDigits = "3" value = "${item.price }" /> VND
+										 <span>/ đêm </span>
 									</p>
 								</div>
 								<div class="btn_room_book">

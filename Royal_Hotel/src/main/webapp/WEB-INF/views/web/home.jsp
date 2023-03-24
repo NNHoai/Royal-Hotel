@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%@ include file="../../../common/taglib.jsp" %>
 <!DOCTYPE html>
 
 <html>
@@ -27,7 +27,8 @@
         </div>
 
         <!--searchbooking-->
-        <form action="" method="post">
+        <%-- <form action="<c:url value='/loai-phong'/>" method="post"> --%>
+        <form action="/Royal_Hotel/loai-phong" method="post">
           <div class="searchbooking">
             <div class="searchform">
               <div class="input">
@@ -49,7 +50,7 @@
               </div>
 
               <div class="btn-search">
-                <button>
+                <button type="submit">
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <p class="search-text">Search</p>
                 </button>
