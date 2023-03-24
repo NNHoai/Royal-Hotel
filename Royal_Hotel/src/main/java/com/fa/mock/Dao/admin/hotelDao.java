@@ -14,12 +14,19 @@ import com.fa.mock.Model.admin.HotelManage;
 public class hotelDao {
 	@Autowired
 	JdbcTemplate _jdbctemplate;
-	
-	public List<HotelManage> getDataHotelManage(){
+
+	public List<HotelManage> getDataHotelManage() {
 		List<HotelManage> list = new ArrayList<HotelManage>();
-		String sql= "Select TOP (1) * from HOTEL";
+		String sql = "Select TOP (1) * from HOTEL";
 		list = _jdbctemplate.query(sql, new MapperHotel());
 		return list;
 	}
 
+	public int updateInfoHotel(HotelManage hotelManage) {
+		String sql = "update HOTEL set NameHotel = '" + hotelManage.getNameHotel() + "' , Address='"
+				+ hotelManage.getAddressHotel() + "', Phone='" + hotelManage.getPhoneHotel() + "', Email='"
+				+ hotelManage.getEmailHotel() + "', Fax='" + hotelManage.getFaxHotel() + "'";
+		int n = _jdbctemplate.update(sql);
+		return n;
+	}
 }

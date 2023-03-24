@@ -8,6 +8,20 @@ public class HotelManage {
 	private String emailHotel;
 	private String faxHotel;
 	
+	
+	
+	public HotelManage() {
+		super();
+	}
+	
+	public HotelManage(String nameHotel, String addressHotel, String phoneHotel, String emailHotel, String faxHotel) {
+		super();
+		this.nameHotel = nameHotel;
+		this.addressHotel = addressHotel;
+		this.phoneHotel = phoneHotel;
+		this.emailHotel = emailHotel;
+		this.faxHotel = faxHotel;
+	}
 	public String getNameHotel() {
 		return nameHotel;
 	}

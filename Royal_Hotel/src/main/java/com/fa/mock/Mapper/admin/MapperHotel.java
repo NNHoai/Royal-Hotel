@@ -19,6 +19,6 @@ public class MapperHotel implements RowMapper<HotelManage> {
 		ht.setFaxHotel(rs.getString("Fax"));
 		return ht;
 	}
-
+	
 }
 	

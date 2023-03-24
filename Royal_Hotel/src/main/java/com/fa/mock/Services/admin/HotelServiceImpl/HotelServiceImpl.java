@@ -18,6 +18,9 @@ public class HotelServiceImpl implements HotelService{
 	public List<HotelManage> getDataHotel() {
 		return hoteldao.getDataHotelManage();
 	}
-	
+	@Override
+	public int updateInfoHotel(HotelManage hotelManage) {
+		return hoteldao.updateInfoHotel(hotelManage);
+	}
 	
 }
