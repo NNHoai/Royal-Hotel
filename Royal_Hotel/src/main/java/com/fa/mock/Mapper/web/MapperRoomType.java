@@ -1,11 +1,10 @@
-package com.fa.mock.Mapper;
-
+package com.fa.mock.Mapper.web;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.fa.mock.Model.RoomType;
+import com.fa.mock.Model.web.RoomType;
 
 public class MapperRoomType implements 	RowMapper<RoomType>{
 	@Override

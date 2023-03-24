@@ -1,13 +1,13 @@
-package com.fa.mock.Services.ServiceImpl;
+package com.fa.mock.Services.web.ServiceImpl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fa.mock.Dao.RoomTypeDao;
-import com.fa.mock.Model.RoomType;
-import com.fa.mock.Services.RoomTypeService;
+import com.fa.mock.Dao.web.RoomTypeDao;
+import com.fa.mock.Model.web.RoomType;
+import com.fa.mock.Services.web.RoomTypeService;
 
 @Service
 public class RoomTypeServiceImpl implements RoomTypeService{

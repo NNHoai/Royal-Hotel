@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.fa.mock.Model.RoomType;
-import com.fa.mock.Services.RoomTypeService;
+import com.fa.mock.Model.web.RoomType;
+import com.fa.mock.Services.web.RoomTypeService;
 
 @Controller
 public class HomeController {
