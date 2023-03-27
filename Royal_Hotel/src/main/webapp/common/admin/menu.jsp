@@ -5,12 +5,12 @@
 
 </div>
 <ul class="nav nav-pills flex-column ">
-	<li class="nav-item"><a class="nav-link " href="#">About Me</a></li>
+	<li class="nav-item"><a class="nav-link " href="/Royal_Hotel/admin/home">About Me</a></li>
 	<li class="nav-item"><a class="nav-link" href="#">Employee</a></li>
 	<li class="nav-item"><a class="nav-link" href="#">Room & RoomType</a></li>
 	<li class="nav-item"><a class="nav-link" href="#">PriceByTime</a>
 	</li>
-	<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+	<li class="nav-item"><a class="nav-link" href="/Royal_Hotel/admin/Infoservice">Services</a></li>
 	<li class="nav-item"><a class="nav-link" href="#">Bank</a></li>
 	<li class="nav-item">
 		<div class="dropdown dropright">

@@ -52,7 +52,13 @@ public class HotelManage {
 	public void setFaxHotel(String faxHotel) {
 		this.faxHotel = faxHotel;
 	}
-	
 
+	@Override
+	public String toString() {
+		return "HotelManage [nameHotel=" + nameHotel + ", addressHotel=" + addressHotel + ", phoneHotel=" + phoneHotel
+				+ ", emailHotel=" + emailHotel + ", faxHotel=" + faxHotel + "]";
+	}
+	
+	
 	
 }

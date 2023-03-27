@@ -50,10 +50,12 @@
     padding: 30px;
     border-radius: 20px;
 }
-
-.form-control {
-    width: 400px;
+.form {
+    margin: 40px;
+    width: 100%;
 }
+
+
 
 .hover:hover {
     background-color: red;
