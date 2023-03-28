@@ -19,17 +19,23 @@
 		<tbody>
 			<c:forEach var="item" items="${serviceOfHotel }">
 				<tr>
-					<td>${item.IDServices}</td>
+
+					<td>${item.idService}</td>
 					<td>${item.nameServices}</td>
 					<td>${item.price}</td>
 					<th class="col-sm-6">${item.description}</th>
-					<th style="float: right;"><button type="button"
-							class="btn btn-outline-primary">Edit</button>
-						<button type="button" class="btn btn-danger">Delete</button></th>
+					<th style="float: right; display: flex;">
+					<a href="/Royal_Hotel/admin/editservice?id=${item.idService}"
+						class="btn btn-outline-success"> Edit </a> 
+						<a href="#" class="btn btn-danger btn-delete-user2"
+						data-key="${item.idService}" data-title="${item.nameServices}"
+						data-toggle="modal" data-target="#modal-delete2"
+						style="float: right;">Delete</a></th>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
+	<jsp:include page="/common/admin/deleteService.jsp"/>
 	<div>
 
 		<button type="button" class="btn btn-outline-success"
@@ -93,5 +99,7 @@
 				</div>
 			</div>
 		</div>
+
+
 	</div>
 </div>

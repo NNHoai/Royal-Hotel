@@ -1,6 +1,8 @@
 package com.fa.mock.Model.admin;
 
+import javax.persistence.Entity;
 
+@Entity
 public class HotelManage {
 	private String nameHotel;
 	private String addressHotel;

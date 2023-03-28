@@ -23,6 +23,20 @@ public class InfoService implements CreateService {
 	public int CreateService(serviceOfHotel sOfHotel) {
 		return hoteldao.createService(sOfHotel);
 	}
+	@Override
+	public int updateService(serviceOfHotel soHotel) {
+		return hoteldao.updateService(soHotel);
+	}
+	@Override
+	public serviceOfHotel getServiceByID(String id) {
+		return hoteldao.getServiceByID(id);
+	}
+	@Override
+	public int deleteService(serviceOfHotel soHotel) {
+		return hoteldao.deleteService(soHotel);
+	}
+	
+	
 
 
 

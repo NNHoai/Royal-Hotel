@@ -1,5 +1,8 @@
 package com.fa.mock.Model.admin;
 
+import javax.persistence.Entity;
+
+@Entity
 public class serviceOfHotel {
 	private String idService;
 	private String nameServices;
@@ -7,25 +10,26 @@ public class serviceOfHotel {
 	private String description;
 	
 	
-	public serviceOfHotel(String iDServices, String nameServices, float price, String description) {
+	
+	public serviceOfHotel(String idService, String nameServices, float price, String description) {
 		super();
-		idService = iDServices;
+		this.idService = idService;
 		this.nameServices = nameServices;
 		this.price = price;
 		this.description = description;
 	}
-
-
+	
+	
 	public serviceOfHotel() {
 		super();
 	}
-	
-	
-	public String getIDServices() {
+
+
+	public String getIdService() {
 		return idService;
 	}
-	public void setIDServices(String iDServices) {
-		idService = iDServices;
+	public void setIdService(String idService) {
+		this.idService = idService;
 	}
 	public String getNameServices() {
 		return nameServices;
@@ -45,5 +49,6 @@ public class serviceOfHotel {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	
 	
 }

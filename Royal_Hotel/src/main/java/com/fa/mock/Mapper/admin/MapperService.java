@@ -12,7 +12,7 @@ public class MapperService implements RowMapper<serviceOfHotel> {
 	@Override
 	public serviceOfHotel mapRow(ResultSet rs, int rowNum) throws SQLException {
 		serviceOfHotel sh = new serviceOfHotel();
-		sh.setIDServices(rs.getString("IDServices"));
+		sh.setIdService(rs.getString("IDServices"));
 		sh.setNameServices(rs.getString("NameServices"));
 		sh.setPrice(rs.getFloat("Price"));
 		sh.setDescription(rs.getString("Description"));
