@@ -1,4 +1,4 @@
-package com.fa.mock.Model;
+package com.fa.mock.Model.web;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

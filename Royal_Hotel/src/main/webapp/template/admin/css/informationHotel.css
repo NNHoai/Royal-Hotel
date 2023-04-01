@@ -1,0 +1,18 @@
+.body {
+    width: 100%;
+}
+
+.infoHotel {
+    margin: 40px;
+    background-color: rgb(198, 198, 199);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.form-control {
+    width: 600px;
+}
+
+.form-group {
+    margin-left: 20%;
+}

@@ -1,0 +1,66 @@
+/* .tab{
+    margin-left: -100px;
+}
+.detail{
+    margin-left: 200px;
+    padding: 30px;
+    
+} */
+.container-body {
+    width: 100%;
+
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.size {
+    font-size: 20px;
+}
+
+.row {
+    margin-top: -4px;
+    height: 100%;
+}
+
+.border {
+    /* border: 50px solid rgb(234, 19, 19); */
+    height: 800px;
+}
+
+.col-sm-2 {
+    border: 2px solid rgb(41, 39, 39) !important;
+
+}
+
+.nav-item {
+    padding: 5px 10px 5px 10px;
+}
+
+.op {
+    color: aqua;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.container-form {
+    margin: 40px;
+    background-color: rgb(198, 198, 199);
+    padding: 30px;
+    border-radius: 20px;
+}
+.form {
+	margin:0px;
+    width: 100%;
+}
+
+
+
+.hover:hover {
+    background-color: red;
+}
+
+.hoversecondary:hover {
+    background-color: green;
+}

@@ -1,4 +1,4 @@
-package com.fa.mock.Dao;
+package com.fa.mock.Dao.web;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.fa.mock.Mapper.MapperRoomType;
-import com.fa.mock.Model.RoomType;
+import com.fa.mock.Mapper.web.MapperRoomType;
+import com.fa.mock.Model.web.RoomType;
 
 @Repository
 public class RoomTypeDao {
