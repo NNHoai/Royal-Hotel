@@ -26,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap"
       rel="stylesheet"
     />
-    <link href="<c:url value='/template/web/assets/css/style.css'/>" rel="stylesheet" type="text/css">
+    <link href="<c:url value='/template/web/assets/css/style1.css'/>" rel="stylesheet" type="text/css">
     <!-- swiper -->
     <link href="<c:url value='/template/web/assets/css/swiper.css'/>" rel="stylesheet" type="text/css">
     <link href="<c:url value='/template/web/assets/css/swiper-bundle.min.css'/>" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@
 	
 	<%@ include file="/common/web/footer.jsp" %>
 	
-	<script src="<c:url value='/template/web/js/swiper-bundle.min.js'/>"></script>
-	<script src="<c:url value='/template//web/js/script.js'/>"></script>
+	<script src="<c:url value='./template/web/js/swiper-bundle.min.js'/>"></script>
+	<script src="<c:url value='./template//web/js/script.js'/>"></script>
 </body>
 </html>

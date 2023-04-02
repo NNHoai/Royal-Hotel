@@ -19,11 +19,11 @@
       <div class="swiper mySwiper">
         <div class="swiper-pagination"></div>
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./template/web/assets/img/baner.jpg" /></div>
-          <div class="swiper-slide"><img src="./template/web/assets/img/baner1.jpg" /></div>
-          <div class="swiper-slide"><img src="./template/web/assets/img/baner2.jpg" /></div>
-          <div class="swiper-slide"><img src="./template/web/assets/img/baner3.jpg" /></div>
-          <div class="swiper-slide"><img src="./template/web/assets/img/baner4.jpg" /></div>
+          <div class="swiper-slide"><img src="<c:url value='/template/web/assets/img/baner.jpg'/>" /></div>
+          <div class="swiper-slide"><img src="<c:url value='/template/web/assets/img/baner1.jpg'/>" /></div>
+          <div class="swiper-slide"><img src="<c:url value='/template/web/assets/img/baner2.jpg'/>" /></div>
+          <div class="swiper-slide"><img src="<c:url value='/template/web/assets/img/baner3.jpg'/>" /></div>
+          <div class="swiper-slide"><img src="<c:url value='/template/web/assets/img/baner4.jpg'/>" /></div>
         </div>
 
         <!--searchbooking-->
@@ -62,7 +62,7 @@
       <!--aboutus-->
       <div class="aboutus">
         <video autoplay loop muted plays-inline>
-          <source src="./template/web/assets/video/aboutus.mp4" type="video/mp4" />
+          <source src="<c:url value='/template/web/assets/video/aboutus.mp4'/>" type="video/mp4" />
         </video>
         <div class="context-about">
           <h2>About us</h2>
@@ -110,7 +110,7 @@
               <button>Read more</button>
             </div>
           </div>
-          <img src="./template/web/assets/img/hotelpool.jpg" />
+          <img src="<c:url value='/template/web/assets/img/hotelpool.jpg'/>" />
         </div>
       </div>
       <!--ourgallery-->
@@ -118,7 +118,7 @@
         <div class="header_text">
           <p>Our Gallery</p>
         </div>
-        <img src="./template/web/assets/img/ourgallery.jpg" />
+        <img src="<c:url value='/template/web/assets/img/ourgallery.jpg'/>" />
       </div>
     </div>
 </body>
