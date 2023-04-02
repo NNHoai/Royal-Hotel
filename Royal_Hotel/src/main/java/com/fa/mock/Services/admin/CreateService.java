@@ -8,9 +8,10 @@ import com.fa.mock.Model.admin.serviceOfHotel;
 @Service
 public interface CreateService {
 	public List<serviceOfHotel> getDataService();
+	
 	public int CreateService(serviceOfHotel sOfHotel);
 	public int updateService(serviceOfHotel soHotel);
 	public serviceOfHotel getServiceByID(String id);
 	public int deleteService(serviceOfHotel soHotel);
-
+	
 }

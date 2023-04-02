@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import com.fa.mock.Dao.admin.hotelDao;
 import com.fa.mock.Model.admin.HotelManage;
-import com.fa.mock.Model.admin.serviceOfHotel;
 import com.fa.mock.Services.admin.HotelService;
 
 @Service

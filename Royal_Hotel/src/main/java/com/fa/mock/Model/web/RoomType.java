@@ -20,6 +20,29 @@ public class RoomType {
 	
 	@Column(name = "Description")
 	private String description;
+	
+	private String idPrice;
+
+	public RoomType() {
+		super();
+	}
+
+	public RoomType(String idRoomType, String nameRoomType, float price, String description, String idPrice) {
+		super();
+		this.idRoomType = idRoomType;
+		this.nameRoomType = nameRoomType;
+		this.price = price;
+		this.description = description;
+		this.idPrice = idPrice;
+	}
+
+	public String getIdPrice() {
+		return idPrice;
+	}
+
+	public void setIdPrice(String idPrice) {
+		this.idPrice = idPrice;
+	}
 
 	public String getIdRoomType() {
 		return idRoomType;

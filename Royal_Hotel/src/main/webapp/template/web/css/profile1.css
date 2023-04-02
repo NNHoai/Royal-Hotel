@@ -1,0 +1,61 @@
+.main-profile{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.form-row{
+    right: 40%;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.form-group label{
+    font-weight: bold;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/* .form-input{
+    text-align: center;
+} */
+
+.form-input input{
+    margin: 10px 0px;
+    padding: 8px;
+    width: 340px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* #birthday{
+    margin: 16px 10px;
+    padding: 10px;
+    width: 100px; 
+    border: 1px solid #888888;
+    border-radius: 4px;
+} */
+
+#username{
+    background-color: rgb(229, 229, 230);
+}
+
+.form-submit input{
+    padding: 10px 12px;
+    border: 1px solid #F2A900;
+    border-radius: 4px;
+    background-color: #F2A900;
+    color: #F5F5F5;
+    font-weight: bold;
+    transition: 0.5s;
+    
+}
+
+.form-submit input:hover{
+    border: 1px solid #414141;
+    background-color: #414141;
+    transition: 0.5s;
+}

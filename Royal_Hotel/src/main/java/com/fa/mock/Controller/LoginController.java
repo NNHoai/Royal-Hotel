@@ -39,14 +39,16 @@ public class LoginController {
 
 		if (check == 1) {
 			int role = loginDao.getRole(username);
-			CustomerModel cus = customerDao.getCustomer(username);
-			session.setAttribute("custommer", cus);
 			if (loginFlag == true && role == 1) {
+				CustomerModel cus = customerDao.getCustomer(username);
+				session.setAttribute("custommer", cus);
 				mav = new ModelAndView(new RedirectView("trang-chu"));
 			} else if (loginFlag == true && role == 0) {
-				mav = new ModelAndView("admin/home");
+				mav = new ModelAndView(new RedirectView("admin/home"));
+				session.setAttribute("username", username);
 			} else if (loginFlag == true && role == 2) {
-				mav = new ModelAndView("employee");
+				mav = new ModelAndView(new RedirectView("employee/home"));
+				session.setAttribute("username", username);
 			} else {
 				mav = new ModelAndView("login");
 				String message = "sai tk";

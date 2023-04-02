@@ -14,6 +14,7 @@ public class MapperRoomType implements 	RowMapper<RoomType>{
 		roomType.setNameRoomType(rs.getString("NameRoomType"));
 		roomType.setPrice(rs.getFloat("Price"));
 		roomType.setDescription(rs.getString("Description"));
+		roomType.setIdPrice(rs.getString("IDPriceByTime"));
 		return roomType;
 	}
 }

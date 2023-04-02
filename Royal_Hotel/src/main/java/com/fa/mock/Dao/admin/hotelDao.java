@@ -9,8 +9,10 @@ import org.springframework.stereotype.Repository;
 
 import com.fa.mock.Mapper.admin.MapperHotel;
 import com.fa.mock.Mapper.admin.MapperService;
+import com.fa.mock.Mapper.admin.statusticRevenue;
 import com.fa.mock.Model.admin.HotelManage;
 import com.fa.mock.Model.admin.serviceOfHotel;
+import com.fa.mock.Model.admin.statustic;
 
 @Repository
 public class hotelDao {
@@ -63,6 +65,12 @@ public class hotelDao {
 		int n = _jdbctemplate.update(sql);
 		return n;
 	}
-
-
+	
+	public List<statustic> getStatustic()
+	{
+		List<statustic> list = new ArrayList<statustic>();
+		String a = "Select MONTH(DateBill) AS MonthBill,  SUM(TotalPrice) AS TotalPrice from PAYMENT GROUP BY MONTH(DateBill)";
+		list = _jdbctemplate.query(a, new statusticRevenue());
+		return list;
+	}
 }
