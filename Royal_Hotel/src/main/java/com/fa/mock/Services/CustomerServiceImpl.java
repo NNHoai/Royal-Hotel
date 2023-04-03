@@ -38,4 +38,14 @@ public class CustomerServiceImpl implements CustomerService{
 		return customerDao.updateInfoCustomer(customerManager);
 	}
 
+	@Override
+	public Boolean checkExistsCustommer(String citizenId) {
+		return customerDao.checkExistsCustommer(citizenId);
+	}
+
+	@Override
+	public int insertCustomerBooking(CustomerModel customer) {
+		return customerDao.insertCustommerBooking(customer);
+	}
+
 }

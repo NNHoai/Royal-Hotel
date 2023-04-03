@@ -10,7 +10,7 @@
 	<li class="nav-item"><a class="nav-link" href="/Royal_Hotel/admin/room">Room & RoomType</a></li>
 	<li class="nav-item"><a class="nav-link" href="/Royal_Hotel/admin/pricebytime">PriceByTime</a>
 	</li>
-	<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+	<li class="nav-item"><a class="nav-link" href="/Royal_Hotel/admin/Infoservice">Services</a></li>
 	<li class="nav-item"><a class="nav-link" href="/Royal_Hotel/admin/bank">Bank</a></li>
 	<li class="nav-item">
 		<div class="dropdown dropright">

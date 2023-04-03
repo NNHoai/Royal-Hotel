@@ -32,16 +32,27 @@ public class CustomerModel {
 		this.headDelegate = headDelegate;
 	}
 	
-	public CustomerModel(String idCustomer, String fullName, String phone, String email, String userName) {
+	public CustomerModel(String idCustomer, String fullName, String phone, String email, String citizenID) {
 		super();
 		this.idCustomer = idCustomer;
 		this.fullName = fullName;
 		this.phone = phone;
 		this.email = email;
-		this.userName = userName;
-		this.idType = 1;
+		this.citizenID = citizenID;
+		this.idType = 2;
 	}
 	
+	public CustomerModel(String idCustomer, String fullName, String phone, String email, String citizenID,
+			String userName) {
+		super();
+		this.idCustomer = idCustomer;
+		this.fullName = fullName;
+		this.phone = phone;
+		this.email = email;
+		this.citizenID = citizenID;
+		this.userName = userName;
+	}
+
 	public String getIdCustomer() {
 		return idCustomer;
 	}

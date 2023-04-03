@@ -21,8 +21,8 @@
 					</div>
 				</div>
 				<div class="signup-form">
-					<form method="POST" class="register-form" id="register-form"
-						action="/dang-ky">
+					<form method="POST" class="register-form" id="register-form" name="form1"
+						action="/Royal_Hotel/dang-ky">
 						<div class="form-row">
 							<div class="form-group">
 								<div class="form-input">

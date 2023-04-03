@@ -1,5 +1,4 @@
 package com.fa.mock.Model.web;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -22,9 +21,11 @@ public class RoomType {
 	private String description;
 	
 	private String idPrice;
-
+	
+	
 	public RoomType() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public RoomType(String idRoomType, String nameRoomType, float price, String description, String idPrice) {
@@ -75,4 +76,11 @@ public class RoomType {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
+	@Override
+	public String toString() {
+		return "RoomType [idRoomType=" + idRoomType + ", nameRoomType=" + nameRoomType + ", price=" + price
+				+ ", description=" + description + "]";
+	}
+	
 }

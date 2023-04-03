@@ -21,6 +21,13 @@ public class CheckinOut {
 		this.timeCheckout = timeCheckout;
 		this.idRoom = idRoom;
 	}
+	
+	public CheckinOut(String idBooking, String timeCheckin, String timeCheckout) {
+		super();
+		this.idBooking = idBooking;
+		this.timeCheckin = timeCheckin;
+		this.timeCheckout = timeCheckout;
+	}
 	public String getIdBooking() {
 		return idBooking;
 	}

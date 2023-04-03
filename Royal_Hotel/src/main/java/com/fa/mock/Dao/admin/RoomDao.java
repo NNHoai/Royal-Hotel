@@ -22,6 +22,19 @@ public class RoomDao {
 		list = _jdbctemplate.query(sql, new MapperRoom());
 		return list;
 	}
+	public String getIDRoomByIDRoomType(String idRoomType, String dateCheckin, String dateCheckout){
+		String sql = "SELECT TOP(1) r.IDRoom"
+				+ "FROM ROOM r"
+				+ "WHERE r.IDRoomType = '"+ idRoomType + "' AND r.IDRoom "
+				+ "  NOT IN ( SELECT r.IDRoom FROM ROOMTYPE rt"
+				+ "	LEFT JOIN BOOKINGDETAIL bd ON bd.IDRoom = r.IDRoom "
+				+ "	LEFT JOIN BOOKING b ON b.IDBooking = bd.IDBooking "
+				+ "	WHERE b.DateCheckin >= '"+dateCheckin+"' "
+				+ "    OR b.DateCheckout <= '"+dateCheckout+"'"
+				+ "	AND r.IDRoomType = rt.IDRoomType )";
+		String idroom = _jdbctemplate.queryForObject(sql, String.class);
+		return idroom;
+	}
 	public int updateRoom(Room room) {
 		String sql = "UPDATE ROOM SET NameRoom=N'"
 				+ room. getRoomName() + "',Status=N'Trống', IDRoomType='" + room.getType() + "'WHERE IDRoom = '" + room.getId() + "'";

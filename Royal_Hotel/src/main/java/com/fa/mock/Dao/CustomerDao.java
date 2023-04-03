@@ -24,6 +24,13 @@ public class CustomerDao {
 		int n = _jdbctemplate.update(sql);
 		return n;
 	}
+	public int insertCustommerBooking(CustomerModel customer) {
+		String sql = "INSERT INTO CUSTOMER VALUES ('" + customer.getIdCustomer() + "', '" + customer.getFullName()
+				+ "', '"+ customer.getPhone() + "', '" + customer.getEmail() + "', '" + customer.getCitizenID()
+				+ "', " + customer.getIdType()+ ")";
+		int n = _jdbctemplate.update(sql);
+		return n;
+	}
 
 	public int createCustommer(CustomerModel customer) {
 		String sql = "INSERT INTO CUSTOMER(IDCustomer, FullName, Phone, Email, UserName, IDType) VALUES ('"
@@ -67,4 +74,14 @@ public class CustomerDao {
 		return n;
 	}
 
+	public Boolean checkExistsCustommer(String citizenId) {
+		boolean checkexists = false;
+		int count =  _jdbctemplate.queryForObject("select count(IDCustomer) from CUSTOMER where CitizenID=? ",
+				Integer.class, citizenId);
+		if(count == 1) {
+			checkexists = true;
+		}
+		return checkexists;
+	}
+	
 }

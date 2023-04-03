@@ -29,4 +29,14 @@ public class CheckinServiceImpl implements CheckinService{
 		return checkinOutDao.updateCheckout(idBooking,idRoom, timeCheckout);
 	}
 
+	@Override
+	public int insertCheckin(CheckinOut checkinOut) {
+		return checkinOutDao.insertCheckin(checkinOut);
+	}
+
+//	@Override
+//	public int insertCheckin(String idBookin, String idRoom) {
+//		return checkinOutDao.insertCheckin(idBookin, idRoom);
+//	}
+
 }

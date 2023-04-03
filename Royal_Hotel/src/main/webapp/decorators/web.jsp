@@ -27,7 +27,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="<c:url value='template/web/css/profile1.css'/>" />
-    <link href="<c:url value='/template/web/assets/css/style.css'/>" rel="stylesheet" type="text/css">
+    <link href="<c:url value='/template/web/assets/css/style3.css'/>" rel="stylesheet" type="text/css">
     <!-- swiper -->
     <link href="<c:url value='/template/web/assets/css/swiper.css'/>" rel="stylesheet" type="text/css">
     <link href="<c:url value='/template/web/assets/css/swiper-bundle.min.css'/>" rel="stylesheet" type="text/css">
@@ -43,6 +43,6 @@
 	<%@ include file="/common/web/footer.jsp" %>
 	
 	<script src="<c:url value='/template/web/js/swiper-bundle.min.js'/>"></script>
-	<script src="<c:url value='/template//web/js/script.js'/>"></script>
+	<script src="<c:url value='/template//web/js/script4.js'/>"></script>
 </body>
 </html>

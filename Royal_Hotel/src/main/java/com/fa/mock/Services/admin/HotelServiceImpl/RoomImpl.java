@@ -135,4 +135,9 @@ public class RoomImpl implements RoomService {
 		return roomdao.getCountNR7();
 	}
 
+	@Override
+	public String getIDRoomByIDRoomType(String idRoomType, String dateCheckin, String dateCheckout) {
+		return roomdao.getIDRoomByIDRoomType(idRoomType, dateCheckin, dateCheckout);
+	}
+
 }

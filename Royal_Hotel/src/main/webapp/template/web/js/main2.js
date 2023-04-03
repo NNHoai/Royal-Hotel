@@ -76,4 +76,16 @@
       });
   })(jQuery);
 
-
+function phonenumber(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  if(inputtxt.value.match(phoneno))
+  {
+      return true;
+  }
+  else
+  {
+     alert("Số điện thoại sai!!!");
+     return false;
+  }
+  }

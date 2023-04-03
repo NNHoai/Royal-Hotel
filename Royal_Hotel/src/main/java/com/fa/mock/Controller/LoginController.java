@@ -51,13 +51,13 @@ public class LoginController {
 				session.setAttribute("username", username);
 			} else {
 				mav = new ModelAndView("login");
-				String message = "sai tk";
+				String message = "Mật khẩu không chính xác";
 				mav.addObject("message", message);
 			}
 		}
 		else {
 			mav = new ModelAndView("login");
-			String message = "Username không tồn tại!!!";
+			String message = "Tài khoản không tồn tại!!!";
 			mav.addObject("message", message);
 		}
 		return mav;

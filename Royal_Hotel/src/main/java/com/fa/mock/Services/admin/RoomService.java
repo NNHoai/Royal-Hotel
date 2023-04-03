@@ -7,6 +7,7 @@ import com.fa.mock.Model.admin.Room;
 
 public interface RoomService {
 	public List<Room> getDataRoom();
+	public String getIDRoomByIDRoomType(String idRoomType, String dateCheckin, String dateCheckout);
 	public Room getRoomByID(String id);
 	public int updateRoom(Room room);
 	public int insertRoom(Room room);

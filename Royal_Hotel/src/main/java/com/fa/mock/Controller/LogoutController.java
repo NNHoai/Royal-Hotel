@@ -13,6 +13,9 @@ public class LogoutController {
 	public ModelAndView gHomeController(HttpSession session) {
 		ModelAndView mav = new ModelAndView("web/home");
 		session.removeAttribute("custommer");
+		session.removeAttribute("dateCheckin");
+		session.removeAttribute("dateCheckout");
+		session.removeAttribute("listRoomType");
 		return mav;
 	}
 }	

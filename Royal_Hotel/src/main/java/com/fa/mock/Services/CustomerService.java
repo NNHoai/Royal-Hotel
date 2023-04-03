@@ -10,9 +10,11 @@ import com.fa.mock.Model.CustomerModel;
 public interface CustomerService {
 	
 	int insertCustomer(CustomerModel customer);
+	int insertCustomerBooking(CustomerModel customer);
 //	List<SignUpForm> checkUser(String username);
 	String getIdCustommer();
 	List<CustomerModel> getDataCustomer();
 	CustomerModel getCustomer(String username);
 	public int updateInfoCustomer(CustomerModel customerManager);
+	Boolean checkExistsCustommer(String citizenId);
 }

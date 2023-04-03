@@ -7,7 +7,7 @@
 </div>
 <div class="menu_header">
 	<div class="menu_left">
-		<li><a href="#home">HOME</a></li>
+		<li><a href="/Royal_Hotel/trang-chu">HOME</a></li>
 		<li><a href="#about">ABOUT US</a></li>
 		<li><a href="#contact">CONTACTS</a></li>
 	</div>

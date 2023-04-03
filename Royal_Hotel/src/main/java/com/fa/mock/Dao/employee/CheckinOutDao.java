@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import com.fa.mock.Mapper.employee.CheckinMapper;
 import com.fa.mock.Model.employee.CheckinOut;
+import com.fa.mock.Model.web.DetailBooking;
 
 @Repository
 public class CheckinOutDao {
@@ -23,6 +24,13 @@ public class CheckinOutDao {
 				+ "	join ROOM r on bd.IDRoom = r.IDRoom join CUSTOMER c on b.IDCustomer = c.IDCustomer";
 		list = _jdbctemplate.query(sql, new CheckinMapper());
 		return list;
+	}
+	
+	public int insertCheckin(CheckinOut checkinOut) {
+		String sql = "INSERT INTO CHECKIN VALUES ('" + checkinOut.getIdBooking() + "','" + checkinOut.getTimeCheckin() + "','"
+				+ checkinOut.getTimeCheckout()   +"')";
+		int n = _jdbctemplate.update(sql);
+		return n;
 	}
 
 	public int updateCheckin(String idBooking, String idRoom, String timeCheckin) {
