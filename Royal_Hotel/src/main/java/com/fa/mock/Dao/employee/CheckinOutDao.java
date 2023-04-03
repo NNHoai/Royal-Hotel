@@ -1,6 +1,5 @@
 package com.fa.mock.Dao.employee;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 import com.fa.mock.Mapper.employee.CheckinMapper;
 import com.fa.mock.Model.employee.CheckinOut;
-import com.fa.mock.Model.web.DetailBooking;
 
 @Repository
 public class CheckinOutDao {
@@ -29,6 +27,11 @@ public class CheckinOutDao {
 	public int insertCheckin(CheckinOut checkinOut) {
 		String sql = "INSERT INTO CHECKIN VALUES ('" + checkinOut.getIdBooking() + "','" + checkinOut.getTimeCheckin() + "','"
 				+ checkinOut.getTimeCheckout()   +"')";
+		int n = _jdbctemplate.update(sql);
+		return n;
+	}
+	public int insertCheckinBooking(CheckinOut checkinOut) {
+		String sql = "INSERT INTO CHECKIN(IDBooking) VALUES ('" + checkinOut.getIdBooking() +"')";
 		int n = _jdbctemplate.update(sql);
 		return n;
 	}

@@ -28,6 +28,12 @@ public class CheckinOut {
 		this.timeCheckin = timeCheckin;
 		this.timeCheckout = timeCheckout;
 	}
+	
+	
+	public CheckinOut(String idBooking) {
+		super();
+		this.idBooking = idBooking;
+	}
 	public String getIdBooking() {
 		return idBooking;
 	}

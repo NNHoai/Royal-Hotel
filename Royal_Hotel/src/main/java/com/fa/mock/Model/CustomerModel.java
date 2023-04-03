@@ -31,14 +31,13 @@ public class CustomerModel {
 		this.idType = idType;
 		this.headDelegate = headDelegate;
 	}
-	
-	public CustomerModel(String idCustomer, String fullName, String phone, String email, String citizenID) {
+	public CustomerModel(String idCustomer, String fullName, String phone, String email, String userName) {
 		super();
 		this.idCustomer = idCustomer;
 		this.fullName = fullName;
 		this.phone = phone;
 		this.email = email;
-		this.citizenID = citizenID;
+		this.userName = userName;
 		this.idType = 2;
 	}
 	
@@ -50,7 +49,7 @@ public class CustomerModel {
 		this.phone = phone;
 		this.email = email;
 		this.citizenID = citizenID;
-		this.userName = userName;
+		this.idType = 2;
 	}
 
 	public String getIdCustomer() {

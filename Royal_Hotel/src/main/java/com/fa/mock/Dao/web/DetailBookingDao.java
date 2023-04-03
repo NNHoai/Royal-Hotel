@@ -12,14 +12,14 @@ public class DetailBookingDao {
 	JdbcTemplate _jdbcTemplate;
 	
 	public int insertDetailBooking(DetailBooking detailBooking) {
-		String sql = "INSERT INTO DETAILBOOKING VALUES ('" + detailBooking.getIDBookingDetail() + "','" + detailBooking.getIDBooking() + "','"
+		String sql = "INSERT INTO BOOKINGDETAIL VALUES ('" + detailBooking.getIDBookingDetail() + "','" + detailBooking.getIDBooking() + "','"
 				+ detailBooking.getIDRoom() + "','" + detailBooking.getQuantityRoom()  +"')";
 		int n = _jdbcTemplate.update(sql);
 		return n;
 	}
 	
 	public String setDetailBookingnID() {
-		String sql = "SELECT COUNT(*) FROM DETAILBOOKING";
+		String sql = "SELECT COUNT(*) FROM BOOKINGDETAIL";
 		int n = _jdbcTemplate.queryForObject(sql, Integer.class);
 		String id = "DB"+n;
 		return id;

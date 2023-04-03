@@ -37,11 +37,13 @@ public class SignUpController {
 		List<SignUpForm> ls = signUpService.checkUser(request.getParameter("username"));
 		if (ls.isEmpty()) {
 			seOfAccount = new SignUpForm(request.getParameter("username"), request.getParameter("password"));
+			System.out.println(request.getParameter("username"));
 			signUpService.getDataSignUp(seOfAccount);
 			String id = customerService.getIdCustommer();
 			CustomerModel newCustomer = new CustomerModel(id, request.getParameter("name"),
 					request.getParameter("phone"), request.getParameter("email"), request.getParameter("username"));
 			customerService.insertCustomer(newCustomer);
+			System.out.println(request.getParameter("username"));
 			mav.addObject("signUpService", seOfAccount);
 			message = "Đăng ký thành công!!!!";
 		} else {

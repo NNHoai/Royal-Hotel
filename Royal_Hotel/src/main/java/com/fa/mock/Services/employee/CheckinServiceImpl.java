@@ -34,6 +34,11 @@ public class CheckinServiceImpl implements CheckinService{
 		return checkinOutDao.insertCheckin(checkinOut);
 	}
 
+	@Override
+	public int insertCheckinBooking(CheckinOut checkinOut) {
+		return checkinOutDao.insertCheckinBooking(checkinOut);
+	}
+
 //	@Override
 //	public int insertCheckin(String idBookin, String idRoom) {
 //		return checkinOutDao.insertCheckin(idBookin, idRoom);

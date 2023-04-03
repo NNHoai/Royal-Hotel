@@ -24,8 +24,8 @@ public class RoomDao {
 	}
 	public String getIDRoomByIDRoomType(String idRoomType, String dateCheckin, String dateCheckout){
 		String sql = "SELECT TOP(1) r.IDRoom"
-				+ "FROM ROOM r"
-				+ "WHERE r.IDRoomType = '"+ idRoomType + "' AND r.IDRoom "
+				+ " FROM ROOM r"
+				+ " WHERE r.IDRoomType = '"+ idRoomType + "' AND r.IDRoom "
 				+ "  NOT IN ( SELECT r.IDRoom FROM ROOMTYPE rt"
 				+ "	LEFT JOIN BOOKINGDETAIL bd ON bd.IDRoom = r.IDRoom "
 				+ "	LEFT JOIN BOOKING b ON b.IDBooking = bd.IDBooking "

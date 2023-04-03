@@ -133,7 +133,7 @@ public class BookingController {
 		
 		if(!existsCustommer) {
 			idCustommer = customerService.getIdCustommer();
-			CustomerModel newcustomer = new CustomerModel(idCustommer, fullname, phone, email, citizenId);
+			CustomerModel newcustomer = new CustomerModel(idCustommer, fullname, phone, email, citizenId, username);
 			customerService.insertCustomerBooking(newcustomer);
 		}
 		String idBooking = bookingService.setBookingID();
@@ -143,8 +143,8 @@ public class BookingController {
 		
 		Booking booking = new Booking(idBooking, dateCheckin, dateCheckout, dateBook, idCustommer);
 		bookingService.insertBooking(booking);
-		CheckinOut checkin = new CheckinOut(idBooking, null, null);
-		checkinService.insertCheckin(checkin);
+		CheckinOut checkin = new CheckinOut(idBooking);
+		checkinService.insertCheckinBooking(checkin);
 		
 		List<RoomType> listRoomType = (List<RoomType>) session.getAttribute("listRoomType");
 		
